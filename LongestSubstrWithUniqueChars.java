@@ -43,7 +43,8 @@ public class Main
 		int maxSize=0;
 		for(Map.Entry<Integer, String>entry: map.entrySet()){
         //cout<<itr->first<<" "<<itr->second<<"\n";
-        maxSize=entry.getKey();
+	if(entry.getKey()>maxSize){
+        maxSize=entry.getKey();}
     }
     
     for(Map.Entry<Integer, String>entry: map.entrySet()){
